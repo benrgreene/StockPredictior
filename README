@@ -1,0 +1,23 @@
+This is the Stocks Prediction software as created by Ben Greene, Elliott Beane and Geoffrey Murray.
+
+
+Current Version: 1.0 Beta
+Authors: Ben Greene, Elliott Beane and Geoffrey Murray
+
+
+Note that this code is still a work in progress, and the authors relize that many parts of the code are obsolete. This is because there was lots of experimenting during development; predicting stocks is very difficult. Some strategies didn't pan out, and we were in a rush to complete this. All that to say, if you would like a clean version of the code, we will be working on that in the next week or so. 
+
+Note that this software uses the scikit-learn machine learning library (and its dependencies)
+
+Final note; you need to run this after trading hours are closed OR tell the software to predict what to do on the previous day for the current day, as there is a bit of a bug currently getting data for an open trading day. Yahoo's finance API just stopped supporting that for some reason, so I need to find a new source for that data. 
+
+
+How it works:
+There are several parts of the scripts that can be run on their own (driver.py, historical_driver.py, get_data.py, and calculate_indicators.py). However, all these can be also run together. For example, the historical driver will call the driver for every day in a time range, and the driver will get data and calculate indicators if needed.
+
+
+Historical Driver:
+This was created for testing purposes. This simply tells the driver what day to predict for, and does so repeatedly for every day in a given range.
+
+Driver:
+This takes in a day, and if no day is passed it assumes to predict for the current day. It will pull the stock's data from Yahoo, and run it through calculate indicators to get the expanded information (Technical Indicators). It then uses previous data to create a training model, and then uses that to predict what to do with the current stocks. 
