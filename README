@@ -12,6 +12,13 @@ Note that this software uses the scikit-learn machine learning library (and its 
 Final note; you need to run this after trading hours are closed OR tell the software to predict what to do on the previous day for the current day, as there is a bit of a bug currently getting data for an open trading day. Yahoo's finance API just stopped supporting that for some reason, so I need to find a new source for that data. 
 
 
+Example command to run after closing hours on current day:
+python3 driver.py
+
+Example command to run during closing hours:
+python3 driver.py 2016-03-08
+
+
 How it works:
 There are several parts of the scripts that can be run on their own (driver.py, historical_driver.py, get_data.py, and calculate_indicators.py). However, all these can be also run together. For example, the historical driver will call the driver for every day in a time range, and the driver will get data and calculate indicators if needed.
 
