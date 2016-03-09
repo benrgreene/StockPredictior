@@ -1,8 +1,10 @@
 This is the Stocks Prediction software as created by Ben Greene, Elliott Beane and Geoffrey Murray.
 
-
 Current Version: 1.0 Beta
 Authors: Ben Greene, Elliott Beane and Geoffrey Murray
+
+By using the software you agree to the license, so make sure that you read the license.
+
 
 
 Note that this code is still a work in progress, and the authors relize that many parts of the code are obsolete. This is because there was lots of experimenting during development; predicting stocks is very difficult. Some strategies didn't pan out, and we were in a rush to complete this. All that to say, if you would like a clean version of the code, we will be working on that in the next week or so. 
