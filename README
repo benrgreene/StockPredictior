@@ -17,7 +17,7 @@ Final note; you need to run this after trading hours are closed OR tell the soft
 Example command to run after closing hours on current day:
 python3 driver.py
 
-Example command to run during closing hours:
+Example command to run during trading hours:
 python3 driver.py 2016-03-08
 
 
